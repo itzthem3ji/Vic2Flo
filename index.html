@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <h1 id="title">This is the title</h1>
-<p id="description">This is a parag.</p>
-<form id="survey-form">
-  <label id="name-label">Name: </label>   
-  <input id="name" type= "text" placeholder="enter your name" required>
-  <label id="email-label">Email: </label>
-  <input id="email" type= "email" placeholder="enter your email" required>
-  <label id="number-label">Number: </label>
-  <input id="number" type= "number" placeholder="enter a number" min="1" max="25">
-  </form>  
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <h1 id="title">This is the title</h1>
+  <p id="description">This is a parag.</p>
+  <form id="survey-form">
+    <label id="name-label">Name: </label>
+    <input id="name" type="text" placeholder="enter your name" required>
+    <label id="email-label">Email: </label>
+    <input id="email" type="email" placeholder="enter your email" required>
+    <label id="number-label">Number: </label>
+    <input id="number" type="number" placeholder="enter a number" min="1" max="25">
+    <select id="dropdown">
+      <option disabled selected value>Select satisfaction level</option>
+      <option value="very satisfied">very satisfied</option>
+      <option value="satisfied">satisfied</option>
+      <option value="okay">okay</option>
+      <option value="dissatisfied">dissatisfied</option>
+    </select>
+    <label>
+      <input type="radio" value="male" name="gender">
+      Male
+    </label>
+    <label>
+      <input type="radio" value="female" name="gender">
+      Female
+    </label>
+    <label>
+      <input type="radio" value="other" name="gender">
+      Other
+    </label>
+    <label>
+      <input type="checkbox" value="Build a Tribute Page" name="microverse projects" class="project-checkbox">
+      Build a Tribute Page
+    </label>
+    <label>
+      <input type="checkbox" value="Build a Survey Form" name="microverse projects" class="project-checkbox">
+      Build a Survey Form
+    </label>
+    <label>
+      <input type="checkbox" value="Build a Personal Portfolio Webpage" name="microverse projects"
+        class="project-checkbox">
+      Build a Personal Portfolio Webpage
+    </label>
+    <textarea id="textarea" placeholder="enter your comment here..."></textarea>
+    <button type="submit" id="submit">Submit
+    </button>
+  </form>
   <!--
 
     Hello Camper!
@@ -30,7 +66,8 @@
     - The freeCodeCamp Team
 
     -->
-    <h1>Hello World, we are software developers!</h1>
-    <script  src="js/index.js"></script>
-  </body>
+  <h1>Hello World, we are software developers!</h1>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
