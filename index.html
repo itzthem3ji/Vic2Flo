@@ -9,15 +9,23 @@
 
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  <h1 id="title">This is the title</h1>
-  <p id="description">This is a parag.</p>
+  <h1 id="title">Microverse Student Satisfaction Survey</h1>
+  <p id="description">We need your honest input on this form. 
+    Please fill as best as you can.</p>
   <form id="survey-form">
+    <h3 id="personal-info">Personal Information</h3>
     <label id="name-label">Name: </label>
     <input id="name" type="text" placeholder="enter your name" required>
+    <br>
+    <br>
     <label id="email-label">Email: </label>
     <input id="email" type="email" placeholder="enter your email" required>
+    <br>
+    <br>
     <label id="number-label">Number: </label>
     <input id="number" type="number" placeholder="enter a number" min="1" max="25">
+
+    <h3 id="satisfaction-lvl">Satisfaction Level</h3>
     <select id="dropdown">
       <option disabled selected value>Select satisfaction level</option>
       <option value="very satisfied">very satisfied</option>
@@ -25,6 +33,8 @@
       <option value="okay">okay</option>
       <option value="dissatisfied">dissatisfied</option>
     </select>
+
+    <h3 id="gender">Gender</h3>
     <label>
       <input type="radio" value="male" name="gender">
       Male
@@ -37,6 +47,9 @@
       <input type="radio" value="other" name="gender">
       Other
     </label>
+    <br>
+    <h3>Microverse Projects Completed</h3>
+    <p>Check completed projects</p>
     <label>
       <input type="checkbox" value="Build a Tribute Page" name="microverse projects" class="project-checkbox">
       Build a Tribute Page
@@ -50,7 +63,11 @@
         class="project-checkbox">
       Build a Personal Portfolio Webpage
     </label>
+    <br>
+    <br>
+    <p>Any additional information you'd like to share?</p>
     <textarea id="textarea" placeholder="enter your comment here..."></textarea>
+    <br>
     <button type="submit" id="submit">Submit
     </button>
   </form>
